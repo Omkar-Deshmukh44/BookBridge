@@ -1,0 +1,80 @@
+<svg width="280" height="80" viewBox="0 0 280 80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Enhanced gradient with more depth -->
+    <linearGradient id="bridgeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="30%" stop-color="#7c3aed"/>
+      <stop offset="70%" stop-color="#9333ea"/>
+      <stop offset="100%" stop-color="#0891b2"/>
+    </linearGradient>
+    
+    <!-- Subtle shadow gradient -->
+    <linearGradient id="shadowGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#111827" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#111827" stop-opacity="0.3"/>
+    </linearGradient>
+    
+    <!-- Book gradient for more premium look -->
+    <linearGradient id="bookGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f2937"/>
+      <stop offset="100%" stop-color="#374151"/>
+    </linearGradient>
+    
+    <!-- Glow filter -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background subtle circle for depth -->
+  <circle cx="25" cy="40" r="22" fill="url(#shadowGradient)" opacity="0.1"/>
+  
+  <!-- Enhanced Book Icon -->
+  <g transform="translate(8, 20)">
+    <!-- Book spine/binding -->
+    <rect x="2" y="8" width="3" height="24" rx="1.5" fill="url(#bookGradient)"/>
+    
+    <!-- Left page -->
+    <path d="M5 10 Q12 8 18 10 L18 30 Q12 28 5 30 Z" 
+          fill="#f8fafc" stroke="url(#bookGradient)" stroke-width="1"/>
+    
+    <!-- Right page -->
+    <path d="M18 10 Q25 8 32 10 L32 30 Q25 28 18 30 Z" 
+          fill="#f1f5f9" stroke="url(#bookGradient)" stroke-width="1"/>
+    
+    <!-- Book pages detail lines -->
+    <line x1="8" y1="14" x2="15" y2="14" stroke="#cbd5e1" stroke-width="0.5"/>
+    <line x1="8" y1="17" x2="14" y2="17" stroke="#cbd5e1" stroke-width="0.5"/>
+    <line x1="8" y1="20" x2="15" y2="20" stroke="#cbd5e1" stroke-width="0.5"/>
+    
+    <line x1="21" y1="14" x2="28" y2="14" stroke="#cbd5e1" stroke-width="0.5"/>
+    <line x1="21" y1="17" x2="27" y2="17" stroke="#cbd5e1" stroke-width="0.5"/>
+    <line x1="21" y1="20" x2="28" y2="20" stroke="#cbd5e1" stroke-width="0.5"/>
+    
+    <!-- Bookmark ribbon -->
+    <path d="M14 8 L14 18 L16 16 L18 18 L18 8 Z" 
+          fill="url(#bridgeGradient)" opacity="0.8"/>
+  </g>
+  
+  <!-- Bridge connecting element (subtle) -->
+  <path d="M45 35 Q50 30 55 35" stroke="url(#bridgeGradient)" stroke-width="2" 
+        fill="none" opacity="0.3" stroke-linecap="round"/>
+  
+  <!-- Enhanced Text with better typography -->
+  <text x="65" y="48" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" 
+        font-size="32" font-weight="700" letter-spacing="-0.5px">
+    <tspan fill="#111827">Book</tspan>
+    <tspan fill="url(#bridgeGradient)">Bridge</tspan>
+  </text>
+  
+  <!-- Subtle tagline -->
+  
+  <!-- Decorative dots for modern touch -->
+  <circle cx="250" cy="25" r="2" fill="url(#bridgeGradient)" opacity="0.6"/>
+  <circle cx="260" cy="30" r="1.5" fill="url(#bridgeGradient)" opacity="0.4"/>
+  <circle cx="255" cy="35" r="1" fill="url(#bridgeGradient)" opacity="0.3"/>
+</svg>
